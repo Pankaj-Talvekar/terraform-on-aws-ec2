@@ -85,6 +85,7 @@ output "for_output_map2" {
   description = "For Loop with Map - Advanced"
   value = {for c, instance in aws_instance.myec2vm: c => instance.public_dns}
 }
+###for c is each count number
 
 # Output Legacy Splat Operator (latest) - Returns the List
 output "legacy_splat_instance_publicdns" {
